@@ -86,3 +86,6 @@ apt-get autoclean all -y
 # systemctl status serial-getty@ttyS0.service
 systemctl enable serial-getty@ttyS2.service
 systemctl start serial-getty@ttyS2.service
+
+apt-get install lm-sensors
+
