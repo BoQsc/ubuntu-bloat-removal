@@ -87,5 +87,6 @@ apt-get autoclean all -y
 systemctl enable serial-getty@ttyS2.service
 systemctl start serial-getty@ttyS2.service
 
-apt-get install lm-sensors
+apt-get install lm-sensors -y
+apt-get install sensord -y
 
