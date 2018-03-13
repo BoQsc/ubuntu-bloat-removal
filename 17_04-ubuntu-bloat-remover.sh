@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 apt-get remove account-plugin-facebook -y
 apt-get remove account-plugin-jabber -y
 apt-get remove account-plugin-salut -y
@@ -77,6 +76,10 @@ apt-get remove unity-scope-video-remote -y
 apt-get remove unity-scope-virtualbox -y
 apt-get remove unity-scope-yelp -y
 apt-get remove unity-scope-zotero -y
+
+apt-get autoremove -y
+apt-get clean all -y 
+apt-get autoclean all -y
 
 # Enable the debug port if available.
 # systemctl status serial-getty@ttyS0.service
